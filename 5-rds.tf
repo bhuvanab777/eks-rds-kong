@@ -12,7 +12,7 @@ resource "aws_db_instance" "default" {
   engine_version       =  var.rds_db_engine_version
   identifier           =  var.rds_name
   username             =  var.rds_username
-  password             =  var.rds_password
+  password             =  aws_secretsmanager_secret_version.db_password.secret_string
   instance_class       =  var.rds_db_instance_type
   allocated_storage    = 20
   db_subnet_group_name = aws_db_subnet_group.default.name
