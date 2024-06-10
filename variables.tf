@@ -119,7 +119,3 @@ variable "rds_iam_db_auth_user" {
   description = "RDS IAM db authentication enabled user"
   type = string
 }
-
-
-
-
