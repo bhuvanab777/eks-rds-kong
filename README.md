@@ -1,17 +1,17 @@
 # Kong Hybrid Deployment on EKS Cluster
 ## Terraform code
 ### VPC 
-  main      
-  Subnets 
-  Private subnets: private-us-east-1a, private-us-east-1b
-  Public subnets: public-us-east-1a, public-us-east-1b
+  - main      
+  - Subnets 
+  - Private subnets: private-us-east-1a, private-us-east-1b
+  - Public subnets: public-us-east-1a, public-us-east-1b
 
 ### RDS
-  demo-postgres-db
-  Db engine: postgresql
-  subnets: public-us-east-1a, public-us-east-1b
-  Master password – used Secret Manager
-  IAM DB authentication – Enabled
+  - demo-postgres-db
+  - Db engine: postgresql
+  - subnets: public-us-east-1a, public-us-east-1b
+  - Master password – used Secret Manager
+  - IAM DB authentication – Enabled
 
 ### EKS cluster
   demo
